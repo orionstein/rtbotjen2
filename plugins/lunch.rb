@@ -13,8 +13,7 @@ module Cinch
 	    end
 
 	    def lunchtime()
-	    	index = 1 + rand(places.length)
-		    m.reply places[index]
+		    m.reply places.sample
 	    end
     end
   end
