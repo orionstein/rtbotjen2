@@ -11,6 +11,7 @@ require 'resolv'
 require './plugins/wolfram'
 require './plugins/quotes'
 require './plugins/trellobot'
+require './plugins/lunch'
 
 
 $link_store ||= {}
