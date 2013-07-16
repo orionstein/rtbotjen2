@@ -11,7 +11,8 @@ require 'resolv'
 require './plugins/wolfram'
 require './plugins/quotes'
 require './plugins/trellobot'
-
+require '.plugins/magic'
+require '.plugins/lunch'
 
 $link_store ||= {}
 $client = Jimson::Client.new(ENV['RPC_HOST']) 
@@ -45,7 +46,7 @@ $bot = Cinch::Bot.new do
       c.nick = ENV['IRC_NICK'] || c.user
     end
 
-    c.plugins.plugins = [Cinch::Plugins::WolframC,Cinch::Plugins::Quotes]
+    c.plugins.plugins = [Cinch::Plugins::WolframC,Cinch::Plugins::Quotes,Cinch::Plugins::Magic,Cinch::Plugins::Lunch]
   end
 
   on :message, /radbot say:(.*)/i do |m,message|
