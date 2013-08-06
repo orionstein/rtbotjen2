@@ -32,7 +32,7 @@ module Cinch
 	    end
 
 	    def lunchtime(m)
-		    m.reply places.sample
+		    m.reply getPlace
 	    end
 
 	    def getPlace()
