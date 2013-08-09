@@ -12,6 +12,7 @@ require './plugins/wolfram'
 require './plugins/quotes'
 require './plugins/trellobot'
 require './plugins/lunch'
+require './plugins/magic'
 
 
 $link_store ||= {}
@@ -46,7 +47,7 @@ $bot = Cinch::Bot.new do
       c.nick = ENV['IRC_NICK'] || c.user
     end
 
-    c.plugins.plugins = [Cinch::Plugins::WolframC,Cinch::Plugins::Quotes]
+    c.plugins.plugins = [Cinch::Plugins::WolframC,Cinch::Plugins::Quotes,Cinch::Plugins::Lunch,Cinch::Plugins::Magic]
   end
 
   on :message, /radbot say:(.*)/i do |m,message|
