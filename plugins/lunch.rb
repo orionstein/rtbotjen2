@@ -11,23 +11,31 @@ module Cinch
 	    def initialize(*args)
         	super
         	places = [
-        		"TJ's",
-        		"Bangkok Joe's",
-        		"Tackle Box",
-        		"Cafe Cantina",
-        		"Farmers Fishers Bakers",
-        		"Moby Dick",
-        		"Johnny Rockets",
-        		"Tbsp",
-        		"Muncheez Mania",
-        		"Old Glory",
-        		"Chipotle",
-        		"Shophouse",
-        		"Cafe Tu-o-Tu",
-        		"Georgetown Dinette",
-        		"Cheap Chinese Place",
-        		"Snap",
-        		"Good Stuff Eatery"
+                "Bangkok Joe's",
+                "Basil Thai",
+                "Booeymonger",
+                "Cafe Cantina",
+                "Cafe Tu-o-Tu",
+                "Cheap Chinese Place",
+                "Chipotle",
+                "Farmers Fishers Bakers",
+                "Five Guys",
+                "George's King of Falafel",
+                "Georgetown Dinette",
+                "Good Stuff Eatery"
+                "Johnny Rockets",
+                "Little Viet Garden",
+                "Moby Dick",
+                "Old Glory",
+                "Quick Pita"
+                "Shophouse",
+                "Smelly Deli",
+                "Snap",
+                "Tackle Box",
+                "Tbsp",
+                "Thunder Burger",
+                "TJ's",
+                "Wingo's",
         	]
 	    end
 
